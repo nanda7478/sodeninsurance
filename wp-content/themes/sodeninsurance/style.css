@@ -1,0 +1,1031 @@
+/*
+Theme Name: Soden Insurance
+Author: the WordPress team
+Description: Soden Insurance is a modernized take on an ever-popular WordPress layout — the horizontal masthead with an optional right sidebar that works perfectly for blogs and websites. It has custom color options with beautiful default color schemes, a harmonious fluid grid using a mobile-first approach, and impeccable polish in every detail. Twenty Sixteen will make your WordPress look beautiful everywhere.
+Version: 1.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: one-column, two-columns, right-sidebar, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, flexible-header, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready, blog
+Text Domain: twentysixteen
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+
+/**
+ * Table of Contents
+ *
+ * 1.0 - Normalize
+ * 2.0 - Genericons
+ * 3.0 - Typography
+ * 4.0 - Elements
+ * 5.0 - Forms
+ * 6.0 - Navigation
+ *   6.1 - Links
+ *   6.2 - Menus
+ * 7.0 - Accessibility
+ * 8.0 - Alignments
+ * 9.0 - Clearings
+ * 10.0 - Widgets
+ * 11.0 - Content
+ *    11.1 - Header
+ *    11.2 - Posts and pages
+ *    11.3 - Post Formats
+ *    11.4 - Comments
+ *    11.5 - Sidebar
+ *    11.6 - Footer
+ * 12.0 - Media
+ *    12.1 - Captions
+ *    12.2 - Galleries
+ * 13.0 - Multisite
+ * 14.0 - Media Queries
+ *    14.1 - >= 710px
+ *    14.2 - >= 783px
+ *    14.3 - >= 910px
+ *    14.4 - >= 985px
+ *    14.5 - >= 1200px
+ * 15.0 - Print
+ */
+
+
+/**
+ * 1.0 - Normalize
+ *
+ * Normalizing styles have been helped along thanks to the fine work of
+ * Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+ */
+
+
+@font-face {
+	font-family: 'Avenir Light';
+	src: url('fonts/avenir-light-webfont.eot');
+	src: url('fonts/avenir-light-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/avenir-light-webfont.woff') format('woff'),
+	     url('fonts/avenir-light-webfont.ttf') format('truetype'),
+	     url('fonts/avenir-light-webfont.svg#avenirlight') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Avenir Heavy';
+	src: url('fonts/avenir-heavy-webfont.eot');
+	src: url('fonts/avenir-heavy-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/avenir-heavy-webfont.woff') format('woff'),
+	     url('fonts/avenir-heavy-webfont.ttf') format('truetype'),
+	     url('fonts/avenir-heavy-webfont.svg#avenir_85_heavyregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+ 
+
+@font-face { font-family: 'proxima_novaregular'; src: url('fonts/proximanova-regular.eot'); src: url('fonts/proximanova-regular.eot?#iefix') format('embedded-opentype'), url('fonts/proximanova-regular.woff2') format('woff2'), url('fonts/proximanova-regular.woff') format('woff'), url('fonts/proximanova-regular.ttf') format('truetype'), url('fonts/proximanova-regular.svg#proxima_novaregular') format('svg'); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: 'proxima_novasemibold'; src: url('fonts/proximanova-semibold_0.eot'); src: url('fonts/proximanova-semibold_0.eot?#iefix') format('embedded-opentype'), url('fonts/proximanova-semibold_0.woff2') format('woff2'), url('fonts/proximanova-semibold_0.woff') format('woff'), url('fonts/proximanova-semibold_0.ttf') format('truetype'), url('fonts/proximanova-semibold_0.svg#proxima_novasemibold') format('svg'); font-weight: normal; font-style: normal; }
+
+html {
+	 
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+body { 	font-family: 'Avenir Light'; line-height:1.4;
+	margin: 0; color:#a2a4a7; font-size:14px; padding:0px;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+	display: block;
+}
+
+audio,
+canvas,
+progress,
+video {
+	display: inline-block;
+	vertical-align: baseline;
+}
+
+audio:not([controls]) {
+	display: none;
+	height: 0;
+}
+
+[hidden],
+template {
+	display: none;
+}
+
+a { color:#3a0519;
+	background-color: transparent;
+}
+
+abbr[title] {
+	border-bottom: 1px dotted;
+}
+
+b,
+strong {
+	font-weight: 700;
+}
+
+small {
+	font-size: 80%;
+}
+
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	top: -0.5em;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+img {
+	border: 0;
+}
+
+svg:not(:root) {
+	overflow: hidden;
+}
+
+figure {
+	margin: 0;
+}
+
+hr {
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+code,
+kbd,
+pre,
+samp {
+	font-size: 1em;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	color: inherit;
+	font: inherit;
+	margin: 0;
+}
+
+select {
+	text-transform: none;
+}
+
+button {
+	overflow: visible;
+}
+
+button,
+input,
+select,
+textarea {
+	max-width: 100%;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	-webkit-appearance: button;
+	cursor: pointer;
+}
+
+button[disabled],
+html input[disabled] {
+	cursor: default;
+	opacity: .5;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-right: 0.4375em;
+	padding: 0;
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-outer-spin-button,
+input[type="time"]::-webkit-inner-spin-button,
+input[type="time"]::-webkit-outer-spin-button,
+input[type="datetime-local"]::-webkit-inner-spin-button,
+input[type="datetime-local"]::-webkit-outer-spin-button,
+input[type="week"]::-webkit-inner-spin-button,
+input[type="week"]::-webkit-outer-spin-button,
+input[type="month"]::-webkit-inner-spin-button,
+input[type="month"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+	height: auto;
+}
+
+input[type="search"] {
+	-webkit-appearance: textfield;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+fieldset {
+	border: 1px solid #d1d1d1;
+	margin: 0 0 1.75em;
+	min-width: inherit;
+	padding: 0.875em;
+}
+
+fieldset > :last-child {
+	margin-bottom: 0;
+}
+
+legend {
+	border: 0;
+	padding: 0;
+}
+
+textarea {
+	overflow: auto;
+	vertical-align: top;
+}
+
+optgroup {
+	font-weight: bold;
+}
+
+ul,
+li {list-style:none; margin:0px; padding:0px; }
+
+a{ text-decoration:none; }
+
+.text-right{ text-align:right; } 
+ .container{  }
+
+/* ====================================================================== header */
+
+.dropdown-toggle, .menu-toggle{ display:none; }
+
+.menus{ background:#eceded; padding:0 0; text-align:center; } 
+.menus ul li { display:inline-block; padding:15px 20px; position:relative; }
+.menus ul li a{ color:#3a0519; text-transform:uppercase;    }
+.menus li:hover .sub-menu { display:block; } 
+.menus .sub-menu{ display:none; position:absolute; left:0px; top:100%; width:200px; z-index:1; background:#323233; text-align:center;   padding:10px; }
+.menus .sub-menu li { display:block;   padding:0px; text-align:left; }
+.menus .sub-menu li a{ color:#fff; font-family: 'Avenir Light';  font-size:13px; display:block; padding:5px 10px; }
+
+.custom-logo { height:auto; max-width:300px; }
+
+
+.head{ padding:15px 0; }
+
+h1, h2, h3, h4, h5, h6   { margin-top:15px; margin-bottom:15px; font-weight:normal; line-height:1.6; }
+
+h1, h2, h3, h4, h5, h6,
+.insu-right-number a,
+.menus ul li a,
+.btn {font-family: 'Avenir Heavy';  }
+ 
+
+.head .btn  { margin-left:15px; }
+.insu-right-number a i{ margin-right:10px;  }
+
+.insu-right-number a { color:#a2a4a7; }
+
+.insu-right-btn{ padding:15px 0; }
+
+.insu-right-link a{ margin-left:10px; font-weight:bold; letter-spacing:0.2px; }
+
+
+.phone { width:15px; height:15px; display:inline-block; vertical-align:middle; background:url(images/call-icon.png) no-repeat 0 0; }
+
+.carousel-caption{ font-size:16px; }
+.carousel-caption h3 { font-size:36px; text-transform:uppercase; }
+
+.carousel-inner img {display:block; }
+
+/* home mid part */
+
+.block-4{ padding-top:15px; padding-bottom:15px;  }
+.block-4 h3 { font-size:22px; text-transform:uppercase; margin-bottom:30px; color:#323233; }
+.block-4 .iteams{ position:relative; display:block; text-align:center; }
+.block-4 h4{ color:#fff; font-size:20px; padding-bottom:40px; } 
+ 
+ 
+ .Welcome-block { background:#eceded;  }	
+ .Welcome-block .content { padding:10px 20px 50px 20px; min-height:440px; }
+ .Welcome-block  .btn{ float:right; }
+.col-with-bg{ padding:50px 0; }
+
+.logo-list .logos { display:inline-block; vertical-align:middle; padding:0 40px;  }
+.partner-block{ text-align:center; } 
+
+
+.latest-blog{ padding-top:60px;  }
+
+.latest-blog .content{ background:#3a0519; padding:15px; color:#FFF;  }
+.latest-blog .content h3{ font-size:16px; margin:0px; }
+.latest-blog .content p{ margin:0px; }
+.latest-blog .content h3 a{ color:#fff; }   
+.latest-blog .content .btn{ font-size:16px; padding:19px 50px 19px 30px; background-size:40px; float:right; margin:0 -10px -10px 0; }
+
+
+
+
+/* -====================== footer ====================== */
+
+.site-footer { margin-top:60px; background:#eceded; padding:25px 0; display:block; clear:both;  color:#a2a4a7; text-transform:uppercase;  }
+#text-2 p{ margin:0px; }
+#text-2 strong { font-family: 'Avenir Heavy'; }
+#text-2 {   color: #3a0519;
+}
+	
+.site-footer ul li a  { color:#a2a4a7; }
+ 
+ strong { font-weight:normal; }
+.footer_address { margin-bottom:15px; } 
+
+.footer_address strong, 
+.site-footer .col-lg-6 .menu li:nth-child(1) a {  color: #3a0519; font-family: 'Avenir Heavy'; }
+.site-footer .col-lg-6 .menu li { padding-bottom:5px; }
+.site-footer .col-lg-6 .widget_nav_menu  { float:left; width:33.3333%; padding:0 0 5px 0; }
+ 
+ 
+ .f-logos  { margin-top:-130px; }
+ .f-logos .widget_media_image { display:inline-block; vertical-align:middle; padding:0 10px; } 
+
+.site-inf p{ margin:0px; }
+.site-inf{ text-align:center; }
+.site-inf a{ color:#a2a4a7; }
+
+.menu-social-link-container{ padding-top:20px; display:block; clear:both; }
+
+.menu-social-link-container .menu-item-50 a:after    { content:"\f39e";  float:left; width:40px; text-indent:0px; line-height:36px; font-size:22px; display:block; color:#3a0519;  }
+.menu-social-link-container .menu-item-51 a:after    { content:"\f099"; float:left; width:40px; text-indent:0px; line-height:36px; font-size:22px; display:block; color:#3a0519;  }
+.menu-social-link-container li { float:left; margin-right:10px; }
+.menu-social-link-container li a{ border:2px solid #3a0519;   -webkit-border-radius: 1000px;
+-moz-border-radius: 1000px;
+border-radius: 1000px; width:40px; height:40px; text-align:center; line-height:40px; text-indent:-9999px; display:block;  font-size:0px;  }
+
+/* inner paghe */
+
+
+
+.entry-header-banner{ position:relative; background:none; color:#fff; font-size:18px; margin-bottom:15px; }
+.entry-header-banner img {width:100%; }
+
+.entry-header h1,
+.entry-header-banner h1{ font-size:45px; text-transform:uppercase; }
+
+
+
+
+/* contact us */
+
+.entry-header{ background:#3a0519; padding:45px 0; display:block; clear:both; }
+.entry-header h1{ margin:0px; color:#fff; padding:30px 0; }
+
+.contact-page .wpcf7 { padding-right:35px; }
+.contact-page { padding-top:30px; }
+.contact-page h3{ font-size:24px; color:#3a0519;  }
+.contact-page .wpcf7 br { display:block; }
+.contact-page .wpcf7 .wpcf7-textarea,
+.contact-page .wpcf7 .wpcf7-text { border:2px solid #ccc; background:#fff; margin:10px 0; font-style:normal; padding:10px 25px; font-size:15px; color:#323233; width:100%;  }
+
+.maps{ padding-left:35px; padding-top:80px; }
+
+.maps .address{ text-align:center; line-height:1.8; }
+.maps .address strong { color:#3a0519; font-size:18px; }
+.maps .address p:first-child{ margin:-8px 0 0 0px; padding:10px 0; border:2px solid #ccc; }
+strong { font-family: 'Avenir Heavy';  }
+
+.wpcf7-submit { padding:8px 60px !important;  border:none; outline:none; }
+
+
+/* ======================================================================================== about us */
+
+.about-block .text { border:1px solid #3a0519; background:rgba(255,255,255,0.5); padding:45px 90px; margin-left:-40%; margin-top:70px; color:#3a0519; margin-right:140px; position:relative; z-index:1; }
+.about-block { padding-top:40px; padding-bottom:40px; }
+.about-block.arrows .img-part:after { background:rgba(0, 0, 0, 0) url("images/arrow-down.png") no-repeat scroll 0 0; content:" "; position:absolute; bottom:-123px; left:15px; width:137px; height:170px; display:block; opacity: 0.5 }
+.about-block img { opacity: 0.85; }
+
+.vedio-part iframe { width:100%; display:block;   }
+.vedio-part {   position:relative; display: block; margin:30px auto; max-width:90%;  }
+
+
+.about-block.block2 .text { margin-right:-40%; margin-left:140px; }
+
+.right-arrow{ background:url(images/arrow2.png) no-repeat 0 0; margin-left:10px; width:18px; vertical-align:top; height:18px; background-size:100%; display:inline-block; }
+.bottom_box_button i{ margin-top:3px; }
+
+
+
+/* blog pages */
+
+.blog-list .blog-block { padding-top:20px; padding-bottom:20px; }
+.blog-list .blog-block h4 {margin-top:0px; }
+.sidebar.widget-area h2{ font-size:18px; text-align:center; border-bottom:1px solid #3a0519; padding-bottom:10px;   }
+.blog-list{ padding-top:40px; }
+
+.widget_categories ul { padding:0 50px; }
+.widget_categories ul a{ font-size:16px;  font-family: 'Avenir Heavy'; text-transform:uppercase; color:#3a0519; margin:5px 0;  }
+ 
+.categories-links{ font-family: 'Avenir Heavy'; text-transform:uppercase; color:#3a0519; display:block;   font-size:15px; padding-top:10px; }
+.categories-links a{ margin-right:10px; }
+.date { border-left:2px solid #ccc; padding-left:5px; }
+.date,
+.ath{ text-transform:uppercase; font-size:15px; margin-right:5px; }
+
+.blog-list .entry-content a{ margin-top:5px; font-family: 'Avenir Heavy'; display:block; text-transform:uppercase; color:#3a0519;text-decoration:underline; } 
+
+.nav-links { text-align:center; }
+.nav-links span,
+.nav-links a{ display:inline-block; font-size:16px; padding:5px; }
+
+
+.single-post .post-thumbnail {
+    float: left;
+    margin: 0;
+    padding: 0 30px 20px 0;
+    width: 50%;
+}
+.single-post .post-thumbnail img{width:100%; height:auto; }
+
+.single-post .entry-title{font-size:22px; margin:0 0 15px 0;  color: #3a0519; text-transform:uppercase; font-family: 'Avenir Heavy';  }
+.custom-closing{ padding:35px 0; font-size:18px;  color: #3a0519; text-transform:uppercase; font-family: 'Avenir Heavy'; display:block; clear:both; } 
+.custom-closing i { border:2px solid #3a0519; -webkit-border-radius: 1000px;
+-moz-border-radius: 1000px;
+border-radius: 1000px; width:30px; height:30px; text-align:center; line-height:26px; margin-right:10px; }
+
+.social_icon ul  { float:left; } 
+.social_icon ul  li { padding:0 2px; display:inline-block; }
+.social_icon span {
+ 
+  float:left;    font-size: 18px;
+    font-weight: normal;
+    margin: 0px 30px 0 0;
+    text-transform: uppercase;
+}
+ 
+ 
+.social_icon { vertical-align:middle;
+     display:inline-block;
+}
+
+.more_event h3 {
+    color: #3476ba;
+    font-size: 28px;
+    font-weight: normal;
+    margin: auto auto 40px;
+    max-width: 84%;
+    text-transform: uppercase;
+}
+.more_event #related_posts li {
+    display: inline-block;
+    margin: 0 10px;
+    text-align: center;
+    width: 30%;
+}
+.more_event #related_posts li img {
+    width: 100%;
+}
+.post-navigation{ margin:auto; max-width:1170px; padding:0 15px; }
+.nav-links span, .nav-links a { font-family: 'Avenir Heavy'; text-transform:uppercase; }
+.nav-previous{ float:left; }
+.nav-previous:before { content:" < "; font-family: 'Avenir Heavy'; text-transform:uppercase; color:#3a0519; }
+.nav-next:after { content:" > "; font-family: 'Avenir Heavy'; text-transform:uppercase; color:#3a0519; }
+
+.post-navigation h2 { display:none; } 
+
+
+/* ================== meet-team */
+
+.meet-team h5 { font-size:24px; color: #3a0519; text-transform:uppercase;  margin-bottom:0px; }
+.meet-team h4{ font-style:italic; font-size:18px; color: #3a0519; text-transform:uppercase; margin-top:0px; margin-bottom:30px;  font-family: 'Avenir Light'; }
+.meet-team { text-align:center; padding-top:40px; padding-bottom:60px; }
+
+.nav-next {
+    float: right;
+}
+
+.bottom-box:after { position:absolute; left:-100%; right:-100%; top:60px; bottom:0px; content:" "; display:block; background:#eceded ; z-index:-1; }
+
+.bottom-box{  padding:60px 100px 40px 100px;  text-align:center; position:relative; }
+.bottom_box_button .btn { padding:10px 40px; font-size:18px; margin:0 10px; }
+.bottom_box_button { padding-top:30px; }
+.bottom_box_button i{ width:21px; height:21px; }
+#post-18{ overflow:hidden; } 
+
+#post-18 .container{ padding-left:70px; padding-right:70px; } 
+
+/* ------ */
+ .v-center { 	top:50%; left:50%;
+transform: translate(-50%, -50%);
+-webkit-transform: translate(-50%, -50%);
+-moz-transform: translate(-50%, -50%);
+-o-transform: translate(-50%, -50%);
+position:absolute;  
+ width:100%; padding:0; }
+ 
+.wpcf7-submit, .btn { background:#3a0519; padding:5px 12px; text-transform:uppercase; color:#fff; display:inline-block; }
+.shadow{ background:rgba(0,0,0,0.3); position:absolute; left:0px; top:0px; width:100%; height:100%; display:block; right:0px; }
+
+.dotted.reds { background:url(images/dotted2.png) no-repeat 0 0; }
+
+.dotted { text-indent:-9999px; font-size:0px; display:block; right:10px; bottom:10px; background:url(images/dotted.png) no-repeat 0 0; width:60px; height:50px; position:absolute; }
+img { max-width:100%; display:block; }
+
+.maroon{ background:rgba(58,5,25,0.7) }
+
+.btn-dotted{ background:#3a0519 url(images/dotted3.png) no-repeat right center; font-size:18px; padding:25px 90px 25px 60px; }
+
+h4.block-tittle { font-size:22px; color:#3a0519; text-transform:uppercase; }
+h6{ font-size:22px; color:#3a0519; text-transform:uppercase; } 
+h2{ font-size:36px; color:#3a0519; text-transform:uppercase; }
+h4{ font-size:18px; }
+
+.clr { display:block; clear:both; }
+
+
+/*-------------------------- */
+#main { overflow:hidden; }
+.back-btn i{ font-size:22px; }
+.back-btn{ color:#3a0519; padding:15px 0; display:block; clear:both; font-size:18px; text-transform:uppercase; font-family: 'Avenir Heavy'; cursor:pointer; }
+.comp-logo{ text-align:center; color:#323233; padding-top:15px; padding-bottom:15px; }
+.comp-logo h4{ color:#3a0519; text-transform:uppercase; margin-bottom:5px; }
+ .comp-logo ul {list-style:none !important; padding:0px !important; }
+ .comp-logo ul li{ list-style:none !important; }
+
+/* -======================= PERSONAL INSURANCE ================= */
+
+.something_more_title h4.block-tittle { border-bottom:2px solid #ccc; margin-top:-60px; text-align:center; display:block; } 
+.insurance-list .parent-page { float:left; width:50%;   }
+.ins-ser-list ul li a,
+.insurance-list .parent-page a{ color:#a2a4a7; font-size:18px; display:inline-block; margin:5px 0;  text-transform: uppercase;  }
+
+.page-template-insurance_inner_page .entry-header-banner,
+.page-template-insurance_page .entry-header-banner { margin-bottom:70px; }
+.insurance-right{ text-align:center }
+.insurance-list{ margin-bottom:40px; }
+
+.something_more_button .btn-info { display:block; padding:15px 30px; clear:both; margin:0 0 30px 0; font-size:18px;   }
+.something_more_button .btn-info i{height:21px; width:21px;}
+.ins-ser-list ul { margin-bottom:30px; }
+.ins-ser-list{ font-size:18px; padding-left:45px; padding-right:45px; }
+ 
+ .page-id-20 .ins-ser-list{ padding-left:15px; padding-right:15px;   -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;  }
+ 
+ 
+.site-footer ul li a:hover{ color:#3a0519; }
+.menu-social-link-container li a:hover { background:#3a0519; color:#fff; }
+.menu-social-link-container li a:hover:after { color:#fff; }
+
+.m-b-0{ margin-bottom:0px; }
+
+.list-style li,
+.list-style {list-style:disc; }
+.list-style { padding-left:25px; }
+.list-style li { margin:8px 0; } 
+
+
+
+/** 17 May 2018 CSS Start here **/
+.get_a_quote {
+  padding: 0 0 30px;
+}
+.get_a_quote h3 {
+  font-family: "Avenir Heavy";
+  font-size: 28px;
+  margin: 0;
+}
+.get_a_quote p {
+  color: #414042;
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 24px;
+  margin-top: 0;
+}
+.quote-list .page_item_has_children {
+  float: left;
+  width: 50%;
+}
+
+.quote-list a {
+  color: #231f20;
+  font-family: "Avenir Heavy";
+  font-size: 28px;
+}
+.quote-list .children {
+  margin: 18px 0 0;
+}
+
+.quote-list .children li a {
+  color: #414042;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin: 0 0 9px 0;
+  display: block; font-family:'Avenir Light';
+}
+.quote-list {margin: 60px 0 0;}
+
+.get_a_quote .back-btn {font-size: 28px;}
+
+.quote_li_title {
+  color: #414042;
+  display: block;
+  font-family: "Avenir Light";
+  font-size: 16px;
+  margin: 0 0 10px 6px;
+  text-transform: uppercase;
+}
+
+.get_a_quote fieldset{ border-color:#8f8f8f;}
+
+.get_a_quote input, .get_a_quote select {
+  border: 1px solid #909090 !important;
+  border-radius: 3px;
+  height: 44px;
+  margin:4px 0 10px !important; width:100%;
+}
+
+
+.get_a_quote textarea {
+  border: 1px solid #909090 !important;
+  border-radius: 3px;
+  max-height: 144px;
+  margin:0 0 10px 0  !important; width:100%;
+}
+
+
+
+.get_a_quote legend {
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+}
+.get_a_quote label {color: #000000 !important;}
+.get_a_quote input[type="checkbox"], .get_a_quote input[type="radio"]{ width:auto !important; height: auto !important; margin: !important; padding:0px !important}
+.get_a_quote .date{ border:none; padding:0;}
+
+.perosnal_border {
+  border: 1px solid #8f8f8f;
+  padding: 20px 14px;
+}
+.perosnal_border .wpcf7{ padding:0;}
+.get_a_quote .wpcf7-radio span, .get_a_quote .wpcf7-checkbox span {margin: 1px 10px 7px 0;}
+.get_a_quote label span {color: red;}
+.get_a_quote form p {margin: 0 0 10px; position:relative;}
+.get_a_quote input[type="submit"] {
+  margin: auto;
+  text-align: center;
+  width: auto; margin-top:20px !important;
+}
+.get_a_quote input[type="radio"] {
+  margin-right: 5px !important;
+  transform: scale(1.3);
+}
+.doller {
+  background: #fff none repeat scroll 0 0;
+  margin: 5px 0 0 2px;
+  padding: 7px;
+  position: absolute;
+  z-index: 9;
+}
+.sqft {
+    background: #fff none repeat scroll 0 0;
+    margin: 33px 6px 0 0;
+    padding: 6px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+/** 17 May 2018 CSS End here **/
+
+
+
+
+
+
+
+ @media (max-width:1199px) { 
+ 
+ .menus ul li{ padding:15px 10px; }
+ 
+ .footer_address,
+ .site-footer ul li a{ font-size:12px; }
+ 
+ .about-block .text { margin-right:0px; margin-top:20px; }
+ .about-block.block2 .text { margin-left:0px; }
+ 
+ .about-block.block2 { padding-top:100px; }
+ 
+  }
+ 
+  @media (max-width:991px) { 
+
+.insu-right-link{ display:none; }
+.head .btn { margin-bottom:15px; display:block; padding:12px; width:170px; }
+.insu-right-btn{ float:right; }
+
+.block-4 .iteams { margin:0 0 30px 0; }
+.block-4{ padding-bottom:0px; }
+
+.Welcome-block .content { min-height:200px; }
+.col-with-bg .Welcome-block{ margin-bottom:30px; }
+.col-with-bg{ padding:20px 0px; }
+
+.logo-list .logos { width:49%; }
+
+.latest-blog{ max-width:430px; margin:auto; padding-top:30px; }
+
+.latest-blog .col-lg-4 { margin-bottom:30px; }
+.latest-blog .col-lg-4 img { width:100%; height:auto;	 }
+
+.f-logos{ margin:auto; text-align:center; }
+
+.footer_address { float:left; padding-right:15px; }
+#text-3{ float:right; margin-top:-100px; width:33%; }
+#text-3 .footer_address { display:block; clear:both; }
+
+
+.entry-header-banner img,
+#myCarousel .carousel-inner img { width:200% !important; max-width:200%; }
+
+.about-block .text { margin-left:-100%; padding:30px;  }
+.about-block.block2 .text { margin-right:-100%; }
+ 
+.menu-toggle{ display:block; background:url(images/berger.png) no-repeat 0 0; border:none; text-indent:-9999999px; font-size:0px; width:30px; height:30px; background-size:100%; margin-top:-90px; position:relative; z-index:10; }
+.menus .site-header-menu.toggled-on  { left:0px; } 
+.menu-toggle.toggled-on { background-image:url(images/close.png);  }
+.menus .site-header-menu { position:fixed; left:-100%; top:0px; height:100%; width:100%; background:#f2f2f2; z-index:9; text-align:center; padding-top:200px ; /*overflow-x:scroll;*/ }
+.menus ul li { display:block; clear:both; }
+ .menus ul li a{ font-size:16px; }
+ .insu-right-btn{ padding-bottom:0px; }
+ 
+ .dropdown-toggle { display:inline-block; background:url(images/down.png) no-repeat 0 0; border:none; width:32px; height:32px; text-indent:-9999px; font-size:0px; vertical-align:middle; }
+ 
+ .menus .sub-menu { position:inherit; width:100%; background:none; text-align:center; padding:15px 0 0 0px; }
+ .menus .sub-menu.toggled-on { display:block; position:inherit; width:100%; background:none; text-align:center; padding:15px 0 0 0px; }
+
+ .menus .sub-menu li a { color:#3a0519; text-align:center; }
+
+.head .logo-block { width:50%; padding-top:20px; float:left; margin-left:20%; text-align:center; }
+.head .col-lg-6.text-right{ width:30%; float:left; }
+
+.contact-page .wpcf7{ padding:0px; }
+.maps { padding-left:15px; padding-top:30px; }
+.head .btn { margin-bottom:10px; }
+.custom-logo{ max-width:350px; }
+
+.entry-header h1, .entry-header-banner h1{ font-size:40px; }
+
+.bottom-box{ padding:40px 0; }
+
+.bottom-box::after{ top:0px; }
+.something_more_title h4.block-tittle{ margin-top:0px; }
+
+.blog-list .sidebar-m,
+.blog-list .col-lg-9{ display:block; clear:both; }
+.blog-list{ padding-top:0px; }
+
+.sidebar-m{ text-align:center; padding-bottom:15px; }
+.sidebar-m ul li{ display:block; padding:3px 0; }
+.sidebar.widget-area h2 { display:inline-block; padding-left:30px; padding-right:30px; }
+
+
+.site-footer .col-lg-6 .widget_nav_menu { width:50%; }
+
+
+}
+
+  @media (max-width:767px) { 
+  
+.custom-logo { margin:auto; }
+.head .btn{ clear:none; float:left;  }
+
+.block-4 { text-align:center; }
+
+.block-4 .iteams img { width:100%; }
+.Welcome-block .content { text-align:center; }
+.btn-dotted { width:100%; text-align:right; }
+.logo-list { text-align:center; } 
+.logo-list .logos { width:100%; display:block; text-align:center; padding:20px 70px; } 
+.logo-list .logos a{ display:inline-block; }
+
+.maps { padding-left:0px !important; padding-right:0px !important; }
+.contact-page h3 { font-size:22px; }
+.home .site-footer { margin-top:-30px; }
+
+.site-footer{ text-align:center; }
+
+#nav_menu-4{ display:none; }
+
+.footer_address { float:none; padding:0; display:block; width:100%; }
+
+#text-3,
+.site-footer .col-lg-6 .widget_nav_menu,
+#menu-footer li{ float:none;    display:block; width:100%; clear:both; margin:0px; }
+
+#text-2{ padding-bottom:15px; }
+
+#text-3{ float:none; }
+.f-logos .widget_media_image { max-width:33%; }
+
+.f-logos{ padding:15px 0; }
+
+
+.carousel-indicators{ display:none; }
+.carousel-caption { text-align:center; }
+
+.carousel-caption h3{ font-size:24px; color:#3a0519; margin:5px 0; }
+#myCarousel .shadow { background:rgba(255,255,255,0.4);  }
+#myCarousel p:empty { display:none; }
+#myCarousel p{ margin:5px 0; }
+.carousel-caption{ color:#000; }
+
+.entry-header-banner{ text-align:center; }
+.entry-header-banner h1 { font-size:28px; margin:5px 0; }
+
+#post-16 .container { text-align:center; }
+.about-block .text { margin:0px;   }
+.about-block .text-part{ position:absolute; top:40px; bottom:40px; left:0px;  }
+
+.about-block { position:relative; }
+
+.about-block .text { position:absolute; height:100%; right:15px; left:15px; }
+.about-block.block2 .text { margin-right:0px; }
+
+.about-block.arrows .img-part::after{ width:100px; background-size:100%; left:50%; margin-left:-50px; }
+
+.about-block.block2 .text-part{ top:100px; }
+.latest-blog h4{ text-align:center; }
+
+.site-footer{ margin-top:30px; }
+
+
+.head .logo-block{ margin:0px; width:100%; padding:0px; }
+.head .col-lg-6.text-right{ width:100%; }
+
+.head .btn{ margin-bottom:0px; }
+.entry-header h1{ padding:0px; font-size:32px; }
+
+.entry-header { text-align:center; }
+.entry-header-banner{ font-size:16px; }
+.entry-header-banner h1{ margin:0px; color:#3a0519; }
+
+.bottom_box_button .btn { display:block; margin:0 0 15px 0; }
+
+h2{ font-size:28px; }
+h6{ font-size:20px; }
+.meet-team { padding-top:0px; padding-bottom:0px; }
+
+#post-18 .container{ padding-left:15px; padding-right:15px; } 
+
+ body { text-align:center; }
+.footer_address, .site-footer ul li a{ font-size:14px; line-height:1.6; }
+
+.page-template-insurance_inner_page .entry-header-banner, .page-template-insurance_page .entry-header-banner { margin-bottom:20px; background-position:0 center; }
+
+.insurance-list .parent-page{ float:none; display:block; clear:both; width:100%; }
+
+.blog-list .blog-block h4{ margin-top:15px; }
+.single-post .post-thumbnail { width:100%; padding-right:0px; }
+
+
+.entry-header-banner img, #myCarousel .carousel-inner img,
+.entry-header-banner img { display:block !important; opacity:1 !important; max-width:100%; }
+.entry-header-banner { background:none !important; }
+
+#myCarousel .carousel-inner .shadow,
+.entry-header-banner .shadow{ display:none; }
+
+.carousel-caption,
+.entry-header-banner .v-center { top:0%; left:0%; background:#f2f2f2;
+transform: translate(0%, 0%);
+-webkit-transform: translate(0%, 0%);
+-moz-transform: translate(0%, 0%);
+-o-transform: translate(0%, 0%);
+position:relative ;  
+ width:100%;  color:#000; padding:15px; }
+ 
+ .site-inf a{ display:block; clear:both; } 
+.site-footer { margin-top:0px; }
+
+}
+
+  @media (max-width:479px) { 
+  
+
+ 
+.about-block .text { padding:20px 10px; }
+.about-block .text p{ margin:5px 0; }
+
+.about-block.block2 .img-part,
+.about-block.arrows .img-part{ padding:0px; }
+.about-block.arrows .img-part img { max-width:130%; width:130%; }
+
+.about-block .text{ left:0px; right:0px; }
+ .head .btn{ margin:0 5px; width:139px; padding:5px 5px 5px 2px; font-size:11px;  }
+.site-header .container{ max-width:320px; }
+.insu-right-btn{ margin:0 -5px; }
+.custom-logo { max-width:100%; }
+.menu-toggle{ margin-top:-80px; }
+
+
+.vedio-part{ max-width:100%; }
+
+.entry-header-banner img { opacity:0; display:none;    }
+.entry-header-banner { min-height:300px; background:no-repeat center center; background-size:auto 100%; }
+
+.social_icon { padding:15px 0; } 
+
+}
+
+  @media (max-width:400px) { 
+  
+
+.latest-blog {   margin-left:-15px; margin-right:-15px;   }
+
+.toggled-on.menu-toggle { margin-top:-153px; }
+.menus .site-header-menu { padding-top:130px; }
+
+  }
+  
+.compny-logo { line-height:150px; height:150px; position:relative; }
+.comp-logo img { max-height:150px;   position: absolute;
+    top: 50%;
+    left: 50%;
+    
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+ 
+    }
+
+
+.meet-team img, 
+.comp-logo img { display:inline-block; }
+
+.blog-list{ display:block; }
+.blog-list .sidebar-m{ float:right; }
+
+#post-18 .back-btn,
+#post-20 .back-btn { display:none; }
+
+#TheFrame{ margin:auto; display:block; }
+
+#post-139 .col-md-6 h4.block-tittle{ color:#323233; } 
+#post-139 .col-md-6 ul li{ padding-bottom:7px; }
+#post-139 .col-md-6 ul li a{ font-size:16px; color:#323233; }
+
+.link-img { max-height:160px; display:block; overflow:hidden; }
+
+
+.page-template-Inner_page_banner .type-page ul { list-style:disc; padding-left:20px; }
+.page-template-Inner_page_banner .type-page ul li{ list-style:disc; }
+
+.modile-menu { overflow:hidden; height:100vh; }
+
+
+
+

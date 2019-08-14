@@ -1,0 +1,180 @@
+[09-Mar-2018 09:20:13 UTC] PHP Warning:  require(/home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/sodeninsurance/inc/template-tags.php): failed to open stream: No such file or directory in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/sodeninsurance/functions.php on line 353
+[09-Mar-2018 09:20:13 UTC] PHP Fatal error:  require(): Failed opening required '/home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/sodeninsurance/inc/template-tags.php' (include_path='.:/opt/php71/lib/php') in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/sodeninsurance/functions.php on line 353
+[09-Mar-2018 09:20:17 UTC] PHP Warning:  require(/home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/sodeninsurance/inc/template-tags.php): failed to open stream: No such file or directory in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/sodeninsurance/functions.php on line 353
+[09-Mar-2018 09:20:17 UTC] PHP Fatal error:  require(): Failed opening required '/home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/sodeninsurance/inc/template-tags.php' (include_path='.:/opt/php71/lib/php') in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/sodeninsurance/functions.php on line 353
+[09-Mar-2018 09:21:09 UTC] PHP Warning:  require(/home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/sodeninsurance/inc/template-tags.php): failed to open stream: No such file or directory in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/sodeninsurance/functions.php on line 353
+[09-Mar-2018 09:21:09 UTC] PHP Fatal error:  require(): Failed opening required '/home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/sodeninsurance/inc/template-tags.php' (include_path='.:/opt/php71/lib/php') in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/sodeninsurance/functions.php on line 353
+[09-Mar-2018 09:21:13 UTC] PHP Warning:  require(/home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/sodeninsurance/inc/template-tags.php): failed to open stream: No such file or directory in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/sodeninsurance/functions.php on line 353
+[09-Mar-2018 09:21:13 UTC] PHP Fatal error:  require(): Failed opening required '/home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/sodeninsurance/inc/template-tags.php' (include_path='.:/opt/php71/lib/php') in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/sodeninsurance/functions.php on line 353
+[10-Mar-2018 06:25:47 UTC] PHP Fatal error:  Uncaught Error: Call to a member function have_posts() on null in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/twentysixteen/custom-template/home_page.php:78
+Stack trace:
+#0 /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-includes/template-loader.php(74): include()
+#1 /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-blog-header.php(19): require_once('/home4/trimurty...')
+#2 /home4/trimurty/demosrvr.com/wp/sodeninsurance/index.php(17): require('/home4/trimurty...')
+#3 {main}
+  thrown in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/twentysixteen/custom-template/home_page.php on line 78
+[10-Mar-2018 07:23:31 UTC] PHP Parse error:  syntax error, unexpected '.' in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/twentysixteen/custom-template/home_page.php on line 87
+[10-Mar-2018 07:23:31 UTC] PHP Parse error:  syntax error, unexpected '.' in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/twentysixteen/custom-template/home_page.php on line 87
+[10-Mar-2018 07:23:31 UTC] PHP Parse error:  syntax error, unexpected '.' in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/twentysixteen/custom-template/home_page.php on line 87
+[10-Mar-2018 07:23:31 UTC] PHP Parse error:  syntax error, unexpected '.' in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/twentysixteen/custom-template/home_page.php on line 87
+[10-Mar-2018 12:30:34 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_post_title() in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/sodeninsurance/custom-template/news_page.php:28
+Stack trace:
+#0 /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-includes/template-loader.php(74): include()
+#1 /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-blog-header.php(19): require_once('/home4/trimurty...')
+#2 /home4/trimurty/demosrvr.com/wp/sodeninsurance/index.php(17): require('/home4/trimurty...')
+#3 {main}
+  thrown in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/sodeninsurance/custom-template/news_page.php on line 28
+[10-Mar-2018 12:30:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_post_title() in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/sodeninsurance/custom-template/news_page.php:28
+Stack trace:
+#0 /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-includes/template-loader.php(74): include()
+#1 /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-blog-header.php(19): require_once('/home4/trimurty...')
+#2 /home4/trimurty/demosrvr.com/wp/sodeninsurance/index.php(17): require('/home4/trimurty...')
+#3 {main}
+  thrown in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/sodeninsurance/custom-template/news_page.php on line 28
+[10-Mar-2018 12:33:27 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function post_title() in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/sodeninsurance/custom-template/news_page.php:29
+Stack trace:
+#0 /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-includes/template-loader.php(74): include()
+#1 /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-blog-header.php(19): require_once('/home4/trimurty...')
+#2 /home4/trimurty/demosrvr.com/wp/sodeninsurance/index.php(17): require('/home4/trimurty...')
+#3 {main}
+  thrown in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/sodeninsurance/custom-template/news_page.php on line 29
+[12-Mar-2018 05:28:38 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/sodeninsurance/custom-template/news_page.php on line 26
+[12-Mar-2018 05:28:38 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/sodeninsurance/custom-template/news_page.php on line 26
+[12-Mar-2018 05:28:38 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/sodeninsurance/custom-template/news_page.php on line 26
+[12-Mar-2018 05:48:29 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function get_the_terms(), 1 passed in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/sodeninsurance/custom-template/news_page.php on line 41 and exactly 2 expected in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-includes/category-template.php:1183
+Stack trace:
+#0 /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/sodeninsurance/custom-template/news_page.php(41): get_the_terms('news_events_cat...')
+#1 /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-includes/template-loader.php(74): include('/home4/trimurty...')
+#2 /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-blog-header.php(19): require_once('/home4/trimurty...')
+#3 /home4/trimurty/demosrvr.com/wp/sodeninsurance/index.php(17): require('/home4/trimurty...')
+#4 {main}
+  thrown in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-includes/category-template.php on line 1183
+[12-Mar-2018 10:29:16 UTC] PHP Parse error:  syntax error, unexpected end of file in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/sodeninsurance/single.php on line 71
+[12-Mar-2018 10:50:41 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ')' in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/sodeninsurance/single.php on line 48
+[12-Mar-2018 11:05:25 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/sodeninsurance/single.php on line 21
+[11-Apr-2018 07:37:07 UTC] PHP Warning:  require(/home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes//inc/template-tags.php): failed to open stream: No such file or directory in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/twentysixteen/functions.php on line 353
+[11-Apr-2018 07:37:07 UTC] PHP Warning:  require(/home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes//inc/template-tags.php): failed to open stream: No such file or directory in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/twentysixteen/functions.php on line 353
+[11-Apr-2018 07:37:07 UTC] PHP Fatal error:  require(): Failed opening required '/home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes//inc/template-tags.php' (include_path='.:/opt/php71/lib/php') in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/twentysixteen/functions.php on line 353
+[11-Apr-2018 07:42:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function twentysixteen_the_custom_logo() in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/sodeninsurance/header.php:36
+Stack trace:
+#0 /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-includes/template.php(688): require_once()
+#1 /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-includes/template.php(647): load_template('/home4/trimurty...', true)
+#2 /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-includes/general-template.php(41): locate_template(Array, true)
+#3 /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/sodeninsurance/custom-template/home_page.php(6): get_header()
+#4 /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-includes/template-loader.php(74): include('/home4/trimurty...')
+#5 /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-blog-header.php(19): require_once('/home4/trimurty...')
+#6 /home4/trimurty/demosrvr.com/wp/sodeninsurance/index.php(17): require('/home4/trimurty...')
+#7 {main}
+  thrown in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/sodeninsurance/header.php on line 36
+[12-Apr-2018 12:24:17 UTC] PHP Parse error:  syntax error, unexpected end of file in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/twentysixteen/custom-template/home_page.php on line 60
+[13-Apr-2018 05:44:21 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function zget_template_part() in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/twentysixteen/index.php:39
+Stack trace:
+#0 /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-includes/template-loader.php(74): include()
+#1 /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-blog-header.php(19): require_once('/home4/trimurty...')
+#2 /home4/trimurty/demosrvr.com/wp/sodeninsurance/index.php(17): require('/home4/trimurty...')
+#3 {main}
+  thrown in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/twentysixteen/index.php on line 39
+[13-Apr-2018 05:54:45 UTC] PHP Parse error:  syntax error, unexpected ')', expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/twentysixteen/index.php on line 26
+[13-Apr-2018 07:03:19 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function is_blog() in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/twentysixteen/sidebar.php:14
+Stack trace:
+#0 /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-includes/template.php(688): require_once()
+#1 /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-includes/template.php(647): load_template('/home4/trimurty...', true)
+#2 /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-includes/general-template.php(110): locate_template(Array, true)
+#3 /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/twentysixteen/index.php(59): get_sidebar()
+#4 /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-includes/template-loader.php(74): include('/home4/trimurty...')
+#5 /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-blog-header.php(19): require_once('/home4/trimurty...')
+#6 /home4/trimurty/demosrvr.com/wp/sodeninsurance/index.php(17): require('/home4/trimurty...')
+#7 {main}
+  thrown in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/twentysixteen/sidebar.php on line 14
+[13-Apr-2018 07:04:41 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function is_blog() in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/twentysixteen/sidebar.php:14
+Stack trace:
+#0 /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-includes/template.php(688): require_once()
+#1 /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-includes/template.php(647): load_template('/home4/trimurty...', true)
+#2 /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-includes/general-template.php(110): locate_template(Array, true)
+#3 /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/twentysixteen/index.php(59): get_sidebar()
+#4 /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-includes/template-loader.php(74): include('/home4/trimurty...')
+#5 /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-blog-header.php(19): require_once('/home4/trimurty...')
+#6 /home4/trimurty/demosrvr.com/wp/sodeninsurance/index.php(17): require('/home4/trimurty...')
+#7 {main}
+  thrown in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/twentysixteen/sidebar.php on line 14
+[13-Apr-2018 07:04:53 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function is_blog() in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/twentysixteen/sidebar.php:14
+Stack trace:
+#0 /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-includes/template.php(688): require_once()
+#1 /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-includes/template.php(647): load_template('/home4/trimurty...', true)
+#2 /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-includes/general-template.php(110): locate_template(Array, true)
+#3 /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/twentysixteen/index.php(59): get_sidebar()
+#4 /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-includes/template-loader.php(74): include('/home4/trimurty...')
+#5 /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-blog-header.php(19): require_once('/home4/trimurty...')
+#6 /home4/trimurty/demosrvr.com/wp/sodeninsurance/index.php(17): require('/home4/trimurty...')
+#7 {main}
+  thrown in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/twentysixteen/sidebar.php on line 14
+[13-Apr-2018 07:04:56 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function is_blog() in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/twentysixteen/sidebar.php:14
+Stack trace:
+#0 /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-includes/template.php(688): require_once()
+#1 /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-includes/template.php(647): load_template('/home4/trimurty...', true)
+#2 /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-includes/general-template.php(110): locate_template(Array, true)
+#3 /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/twentysixteen/index.php(59): get_sidebar()
+#4 /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-includes/template-loader.php(74): include('/home4/trimurty...')
+#5 /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-blog-header.php(19): require_once('/home4/trimurty...')
+#6 /home4/trimurty/demosrvr.com/wp/sodeninsurance/index.php(17): require('/home4/trimurty...')
+#7 {main}
+  thrown in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/twentysixteen/sidebar.php on line 14
+[13-Apr-2018 11:04:18 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ',' or ')' in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/twentysixteen/custom-template/Inner_page_banner.php on line 16
+[13-Apr-2018 11:04:34 UTC] PHP Parse error:  syntax error, unexpected ')' in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/twentysixteen/custom-template/Inner_page_banner.php on line 16
+[13-Apr-2018 11:27:06 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function the_contant() in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/twentysixteen/custom-template/Inner_page_banner.php:24
+Stack trace:
+#0 /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-includes/template-loader.php(74): include()
+#1 /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-blog-header.php(19): require_once('/home4/trimurty...')
+#2 /home4/trimurty/demosrvr.com/wp/sodeninsurance/index.php(17): require('/home4/trimurty...')
+#3 {main}
+  thrown in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/twentysixteen/custom-template/Inner_page_banner.php on line 24
+[13-Apr-2018 14:46:34 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_the_field() in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/twentysixteen/custom-template/Inner_page_banner.php:56
+Stack trace:
+#0 /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-includes/template-loader.php(74): include()
+#1 /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-blog-header.php(19): require_once('/home4/trimurty...')
+#2 /home4/trimurty/demosrvr.com/wp/sodeninsurance/index.php(17): require('/home4/trimurty...')
+#3 {main}
+  thrown in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/twentysixteen/custom-template/Inner_page_banner.php on line 56
+[16-Apr-2018 07:21:42 UTC] PHP Parse error:  syntax error, unexpected '$cou' (T_VARIABLE), expecting '(' in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/sodeninsurance/custom-template/insurance_page.php on line 38
+[16-Apr-2018 07:22:06 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/sodeninsurance/custom-template/insurance_page.php on line 42
+[16-Apr-2018 07:22:30 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/sodeninsurance/custom-template/insurance_page.php on line 42
+[16-Apr-2018 07:22:47 UTC] PHP Parse error:  syntax error, unexpected 'endwhile' (T_ENDWHILE) in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/sodeninsurance/custom-template/insurance_page.php on line 47
+[16-Apr-2018 11:39:03 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function the_advanced_excerpt() in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/sodeninsurance/custom-template/insurance_page.php:59
+Stack trace:
+#0 /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-includes/template-loader.php(74): include()
+#1 /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-blog-header.php(19): require_once('/home4/trimurty...')
+#2 /home4/trimurty/demosrvr.com/wp/sodeninsurance/index.php(17): require('/home4/trimurty...')
+#3 {main}
+  thrown in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/sodeninsurance/custom-template/insurance_page.php on line 59
+[16-Apr-2018 11:39:42 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function the_advanced_excerpt() in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/sodeninsurance/custom-template/insurance_page.php:58
+Stack trace:
+#0 /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-includes/template-loader.php(74): include()
+#1 /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-blog-header.php(19): require_once('/home4/trimurty...')
+#2 /home4/trimurty/demosrvr.com/wp/sodeninsurance/index.php(17): require('/home4/trimurty...')
+#3 {main}
+  thrown in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/sodeninsurance/custom-template/insurance_page.php on line 58
+[16-Apr-2018 11:46:48 UTC] PHP Parse error:  syntax error, unexpected '?' in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/sodeninsurance/custom-template/insurance_page.php on line 58
+[16-Apr-2018 11:46:48 UTC] PHP Parse error:  syntax error, unexpected '?' in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/sodeninsurance/custom-template/insurance_page.php on line 58
+[16-Apr-2018 11:47:28 UTC] PHP Parse error:  syntax error, unexpected '?' in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/sodeninsurance/custom-template/insurance_page.php on line 59
+[16-Apr-2018 11:47:28 UTC] PHP Parse error:  syntax error, unexpected '?' in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/sodeninsurance/custom-template/insurance_page.php on line 59
+[16-Apr-2018 11:47:38 UTC] PHP Parse error:  syntax error, unexpected '?' in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/sodeninsurance/custom-template/insurance_page.php on line 59
+[16-Apr-2018 11:47:39 UTC] PHP Parse error:  syntax error, unexpected '?' in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/sodeninsurance/custom-template/insurance_page.php on line 59
+[17-Apr-2018 06:45:05 UTC] PHP Parse error:  syntax error, unexpected ',' in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/sodeninsurance/archive.php on line 29
+[18-Apr-2018 08:02:36 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_the_field() in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/sodeninsurance/custom-template/insurance_inner_page.php:53
+Stack trace:
+#0 /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-includes/template-loader.php(74): include()
+#1 /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-blog-header.php(19): require_once('/home4/trimurty...')
+#2 /home4/trimurty/demosrvr.com/wp/sodeninsurance/index.php(17): require('/home4/trimurty...')
+#3 {main}
+  thrown in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/sodeninsurance/custom-template/insurance_inner_page.php on line 53
+[25-Apr-2018 10:20:36 UTC] PHP Parse error:  syntax error, unexpected end of file in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/sodeninsurance/custom-template/Inner_page_banner.php on line 40
+[25-Apr-2018 10:23:08 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/plugins/advanced-custom-fields-pro/core/cache.php on line 234
+[11-May-2018 06:07:04 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/sodeninsurance/header.php:12) in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-includes/pluggable.php on line 1216
+[11-May-2018 06:10:11 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/sodeninsurance/custom-template/Inner_page.php on line 74
+[11-May-2018 06:10:12 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/sodeninsurance/custom-template/Inner_page.php on line 74
+[16-May-2018 11:23:30 UTC] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF) in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/sodeninsurance/custom-template/insurance_form.php on line 81
+[16-May-2018 11:25:55 UTC] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF) in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/sodeninsurance/custom-template/insurance_form.php on line 81
+[16-May-2018 11:25:56 UTC] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF) in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/sodeninsurance/custom-template/insurance_form.php on line 81
+[16-May-2018 11:25:57 UTC] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF) in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/sodeninsurance/custom-template/insurance_form.php on line 81
+[16-May-2018 11:25:57 UTC] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF) in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/sodeninsurance/custom-template/insurance_form.php on line 81
+[16-May-2018 11:25:57 UTC] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF) in /home4/trimurty/demosrvr.com/wp/sodeninsurance/wp-content/themes/sodeninsurance/custom-template/insurance_form.php on line 81
